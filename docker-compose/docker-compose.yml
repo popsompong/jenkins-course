@@ -12,6 +12,7 @@ services:
     volumes:
       - /Users/sompong/Jenkins-WorkSpace:/var/jenkins_home
       - /var/run/docker.sock:/var/run/docker.sock
+      - /usr/local/bin/docker:/usr/bin/docker 
   postgres:
     image: postgres
     container_name: postgres  
